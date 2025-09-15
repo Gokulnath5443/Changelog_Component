@@ -43,8 +43,10 @@ body{
     justify-content: center; 
     flex-direction: column;
   position: relative;
-  border-radius: 15px;
- 
+  border-radius: 15px;line-height: 30px;
+}
+.div6{
+    line-height: 20px;
 }
 .div1:hover{
     background-color: black;
@@ -95,4 +97,27 @@ h1:hover{
     100%{
         height: 730px;
     }
+    
+}
+button{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #BA86FE;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+button:hover{
+    color: rgb(255, 255, 255);
+    background-color: #6f00ff;
+}
+.div8{
+    
+    height: 40px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

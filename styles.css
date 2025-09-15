@@ -1,0 +1,100 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a1a; /* dark background */
+  color: #f0f0f0; /* light text */
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.changelog-container {
+  background-color: #2c2c2c;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+}
+
+.changelog-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.changelog-subtitle {
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 20px; /* space for the line */
+  padding-left: 20px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;  /* center of the line */
+  bottom: 0;
+  width: 4px;
+  background-color: #555;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 20px; /* space between dot and text */
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 12px;
+  height: 12px;
+  background-color: #888;
+  border: 2px solid #aaa;
+  border-radius: 50%;
+}
+
+.timeline-date {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.timeline-content {
+  color: #e0e0e0;
+}
+
+.changelog-footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn-visit {
+  background-color: #8e44ad; /* purple-ish */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-visit:hover {
+  background-color: #732d91;
+}
